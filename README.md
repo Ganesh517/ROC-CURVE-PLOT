@@ -28,7 +28,7 @@ On the other hand, if our classifier is predicting whether someone has a termina
 ```
 /*
 Program to plot Receiver Operating Characteristic [ROC] Curve.
-Developed by   : Eluru Ganesh
+Developed by   : ELURU GANESH
 RegisterNumber :  212220230016
 */
 ```
@@ -65,17 +65,16 @@ y_pred_proba=log_regression.predict_proba(x_test)[::,1]
 fpr,tpr, _ = metrics.roc_curve(y_test,y_pred_proba)
 auc = metrics.roc_auc_score(y_test,y_pred_proba)
 
-
 plt.plot(fpr,tpr, label="AUC" + str(auc))
 plt.ylabel("True Positive Rate")
 plt.xlabel("False Positive Rate")
 plt.legend(loc=4)
-
 plt.show()
 ```
 
 ## Output:
-![Screenshot_642](https://github.com/Ganesh517/ROC-CURVE-PLOT/blob/main/n7.png)
+
+![Capture10](https://user-images.githubusercontent.com/75234588/169309175-2ea6dd11-6b47-4e22-9358-4cae656c3bf3.PNG)
 
 
 ## Result:
